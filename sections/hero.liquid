@@ -1,0 +1,312 @@
+<section class="hero-banner" style="background-color: {{ section.settings.bg_color }};">
+  <div class="hero-container" style="max-width: {{ section.settings.max_width }}px; margin-inline: auto;">
+    <div class="hero-content">
+
+      {% if section.settings.review_text != blank %}
+        <div class="hero-review">
+          <div class="hero-stars">
+            <!-- Inline SVG stars (5 stars example) -->
+            <svg
+              width="88"
+              height="16"
+              viewBox="0 0 88 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6918 6.04081C13.6918 5.84625 13.5415 5.72244 13.2408 5.66938L9.12857 5.05918L7.29796 1.34489C7.19184 1.13265 7.05918 1.02653 6.9 1.02653C6.74082 1.02653 6.60816 1.13265 6.50204 1.34489L4.67143 5.05918L0.559182 5.66938C0.258502 5.72244 0.108162 5.84625 0.108162 6.04081C0.108162 6.16462 0.17891 6.29727 0.320407 6.43877L3.29184 9.33061L2.57551 13.4163C2.57551 13.4871 2.57551 13.5401 2.57551 13.5755C2.57551 13.6816 2.60204 13.7745 2.6551 13.8541C2.70816 13.9337 2.7966 13.9735 2.92041 13.9735C3.00884 13.9735 3.11496 13.9381 3.23877 13.8673L6.9 11.9571L10.5612 13.8673C10.685 13.9381 10.7912 13.9735 10.8796 13.9735C11.0034 13.9735 11.0918 13.9337 11.1449 13.8541C11.198 13.7745 11.2245 13.6816 11.2245 13.5755C11.2245 13.5048 11.2245 13.4517 11.2245 13.4163L10.5082 9.33061L13.4796 6.43877C13.6211 6.29727 13.6918 6.16462 13.6918 6.04081Z" fill="#E10017" />
+              <path d="M31.482 6.03715C31.482 5.84273 31.3318 5.71901 31.0313 5.66599L26.922 5.05622L25.0928 1.34463C24.9867 1.13254 24.8541 1.02649 24.6951 1.02649C24.536 1.02649 24.4035 1.13254 24.2974 1.34463L22.4681 5.05622L18.3589 5.66599C18.0584 5.71901 17.9082 5.84273 17.9082 6.03715C17.9082 6.16087 17.9789 6.29342 18.1203 6.43482L21.0895 9.32456L20.3737 13.4073C20.3737 13.478 20.3737 13.531 20.3737 13.5664C20.3737 13.6724 20.4002 13.7652 20.4533 13.8447C20.5063 13.9243 20.5947 13.9641 20.7184 13.9641C20.8067 13.9641 20.9128 13.9287 21.0365 13.858L24.6951 11.9492L28.3537 13.858C28.4774 13.9287 28.5834 13.9641 28.6718 13.9641C28.7955 13.9641 28.8839 13.9243 28.9369 13.8447C28.9899 13.7652 29.0164 13.6724 29.0164 13.5664C29.0164 13.4957 29.0164 13.4427 29.0164 13.4073L28.3006 9.32456L31.2699 6.43482C31.4113 6.29342 31.482 6.16087 31.482 6.03715Z" fill="#E10017" />
+              <path d="M49.2818 6.04081C49.2818 5.84625 49.1315 5.72244 48.8308 5.66938L44.7186 5.05918L42.888 1.34489C42.7818 1.13265 42.6492 1.02653 42.49 1.02653C42.3308 1.02653 42.1982 1.13265 42.092 1.34489L40.2614 5.05918L36.1492 5.66938C35.8485 5.72244 35.6982 5.84625 35.6982 6.04081C35.6982 6.16462 35.7689 6.29727 35.9104 6.43877L38.8818 9.33061L38.1655 13.4163C38.1655 13.4871 38.1655 13.5401 38.1655 13.5755C38.1655 13.6816 38.192 13.7745 38.2451 13.8541C38.2982 13.9337 38.3866 13.9735 38.5104 13.9735C38.5988 13.9735 38.705 13.9381 38.8288 13.8673L42.49 11.9571L46.1512 13.8673C46.275 13.9381 46.3812 13.9735 46.4696 13.9735C46.5934 13.9735 46.6818 13.9337 46.7349 13.8541C46.788 13.7745 46.8145 13.6816 46.8145 13.5755C46.8145 13.5048 46.8145 13.4517 46.8145 13.4163L46.0982 9.33061L49.0696 6.43877C49.2111 6.29727 49.2818 6.16462 49.2818 6.04081Z" fill="#E10017" />
+              <path d="M67.0818 6.04081C67.0818 5.84625 66.9315 5.72244 66.6308 5.66938L62.5186 5.05918L60.688 1.34489C60.5818 1.13265 60.4492 1.02653 60.29 1.02653C60.1308 1.02653 59.9982 1.13265 59.892 1.34489L58.0614 5.05918L53.9492 5.66938C53.6485 5.72244 53.4982 5.84625 53.4982 6.04081C53.4982 6.16462 53.5689 6.29727 53.7104 6.43877L56.6818 9.33061L55.9655 13.4163C55.9655 13.4871 55.9655 13.5401 55.9655 13.5755C55.9655 13.6816 55.992 13.7745 56.0451 13.8541C56.0982 13.9337 56.1866 13.9735 56.3104 13.9735C56.3988 13.9735 56.505 13.9381 56.6288 13.8673L60.29 11.9571L63.9512 13.8673C64.075 13.9381 64.1812 13.9735 64.2696 13.9735C64.3934 13.9735 64.4818 13.9337 64.5349 13.8541C64.588 13.7745 64.6145 13.6816 64.6145 13.5755C64.6145 13.5048 64.6145 13.4517 64.6145 13.4163L63.8982 9.33061L66.8696 6.43877C67.0111 6.29727 67.0818 6.16462 67.0818 6.04081Z" fill="#E10017" />
+              <path d="M84.872 6.03715C84.872 5.84273 84.7218 5.71901 84.4213 5.66599L80.312 5.05622L78.4828 1.34463C78.3767 1.13254 78.2442 1.02649 78.0851 1.02649C77.926 1.02649 77.7935 1.13254 77.6874 1.34463L75.8581 5.05622L71.7489 5.66599C71.4484 5.71901 71.2982 5.84273 71.2982 6.03715C71.2982 6.16087 71.3689 6.29342 71.5103 6.43482L74.4795 9.32456L73.7637 13.4073C73.7637 13.478 73.7637 13.531 73.7637 13.5664C73.7637 13.6724 73.7902 13.7652 73.8433 13.8447C73.8963 13.9243 73.9847 13.9641 74.1084 13.9641C74.1968 13.9641 74.3028 13.9287 74.4265 13.858L78.0851 11.9492L81.7437 13.858C81.8674 13.9287 81.9734 13.9641 82.0618 13.9641C82.1855 13.9641 82.2739 13.9243 82.3269 13.8447C82.3799 13.7652 82.4064 13.6724 82.4064 13.5664C82.4064 13.4957 82.4064 13.4427 82.4064 13.4073L81.6906 9.32456L84.6599 6.43482C84.8013 6.29342 84.872 6.16087 84.872 6.03715Z" fill="#E10017" />
+            </svg>
+          </div>
+          <span class="hero-review-text">{{ section.settings.review_text }}</span>
+        </div>
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <h1 class="hero-heading">{{ section.settings.heading }}</h1>
+      {% endif %}
+
+      {% if section.settings.subheading != blank %}
+        <p class="hero-subheading">{{ section.settings.subheading }}</p>
+      {% endif %}
+
+      <div class="hero-buttons">
+        {% if section.settings.primary_button_text != blank %}
+          <a href="{{ section.settings.primary_button_link }}" class="btn btn-primary">
+            {{ section.settings.primary_button_text }}
+          </a>
+        {% endif %}
+        {% if section.settings.secondary_button_text != blank %}
+          <a href="{{ section.settings.secondary_button_link }}" class="btn btn-secondary">
+            {{ section.settings.secondary_button_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if section.settings.guarantee_text != blank %}
+        <div class="hero-guarantee">
+          {% if section.settings.guarantee_icon != blank %}
+            <img src="{{ section.settings.guarantee_icon | img_url: '50x' }}" alt="Guarantee icon">
+          {% endif %}
+          <span>{{ section.settings.guarantee_text }}</span>
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="hero-icons">
+          {% for block in section.blocks %}
+            <div class="hero-icon">
+              {% if block.settings.icon != blank %}
+                <img src="{{ block.settings.icon | img_url: '100x' }}" alt="{{ block.settings.text | escape }}">
+              {% endif %}
+              {% if block.settings.text != blank %}
+                <p>{{ block.settings.text }}</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="hero-image">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.heading | escape }}">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "range",
+        "id": "max_width",
+        "label": "Max container width (px)",
+        "min": 1440,
+        "max": 1920,
+        "step": 10,
+        "unit": "px",
+        "default": 1440
+      },
+      {
+        "type": "text",
+        "id": "review_text",
+        "label": "Review Text",
+        "default": "Trusted by 1,000+ happy customers"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading",
+        "default": "<p>Wake Up The <em>Muscles</em> That Matter.</p>"
+      }, {
+        "type": "textarea",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Suji delivers science-backed targeted compression — pain relief, muscle activation, and lasting strength in minutes, right from home."
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Hero Image"
+      }, {
+        "type": "text",
+        "id": "primary_button_text",
+        "label": "Primary Button Text",
+        "default": "Try Suji"
+      }, {
+        "type": "url",
+        "id": "primary_button_link",
+        "label": "Primary Button Link"
+      }, {
+        "type": "text",
+        "id": "secondary_button_text",
+        "label": "Secondary Button Text",
+        "default": "How It Works"
+      }, {
+        "type": "url",
+        "id": "secondary_button_link",
+        "label": "Secondary Button Link"
+      }, {
+        "type": "image_picker",
+        "id": "guarantee_icon",
+        "label": "Guarantee Icon"
+      }, {
+        "type": "text",
+        "id": "guarantee_text",
+        "label": "Guarantee Text",
+        "default": "30-day money back guarantee"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon_item",
+        "name": "Feature Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Feature text"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 4,
+    "presets": [
+      {
+        "name": "Hero Section",
+        "category": "Hero"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .hero-banner {
+    width: 100%;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+
+  .hero-review {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .hero-review span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hero-stars svg {
+    color: #e60023;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .hero-subheading {
+    font-size: 1rem;
+    color: #717171;
+    max-width: 70.05%;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    padding: 0.563rem 1.625rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -0.03rem;
+  }
+
+  .btn-primary {
+    background-color: #E10017;
+    color: #FFFFFF;
+  }
+
+  .btn-secondary {
+    border: 0.063rem solid #E10017;
+    color: #E10017;
+  }
+
+  .hero-guarantee {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    color: #222;
+  }
+
+  .hero-guarantee span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hero-guarantee img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .hero-icon {
+    display: flex;
+    align-items: center;
+    width: 33.333333%;
+    gap: 0.5rem;
+  }
+
+  .hero-icon p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hero-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .hero-buttons {
+      justify-content: center;
+    }
+    .hero-icons {
+      justify-content: center;
+    }
+    .hero-content {
+      padding-left: 0;
+    }
+  }
+{% endstylesheet %}

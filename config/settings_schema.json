@@ -19,7 +19,7 @@
         "id": "type_primary_font",
         "default": "work_sans_n4",
         "label": "t:general.primary"
-      },
+      }
     ]
   },
   {
@@ -44,7 +44,7 @@
       {
         "type": "range",
         "id": "min_page_margin",
-        "min": 10,
+        "min": 0,
         "max": 100,
         "step": 1,
         "unit": "px",
